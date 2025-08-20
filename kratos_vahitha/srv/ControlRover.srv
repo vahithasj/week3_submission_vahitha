@@ -1,0 +1,6 @@
+float64 speed
+string direction
+---
+bool success
+string message
+

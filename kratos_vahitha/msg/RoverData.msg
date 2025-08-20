@@ -1,0 +1,6 @@
+geometry_msgs/Twist velocity
+float64 distance_traveled
+geometry_msgs/Pose coordinates
+float32 battery_level
+builtin_interfaces/Time travel_time
+
