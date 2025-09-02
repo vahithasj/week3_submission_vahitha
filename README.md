@@ -1,3 +1,4 @@
+
 # Week 3 Submission - Vahitha SJ
 
 <<<<<<< HEAD
@@ -38,6 +39,35 @@ Files: q4_server.py and q4_client.py
 Custom Service: CalculateArea.srv  
 Description: A service definition was created to calculate the area of a rectangle. The server receives length and width from the client, calculates the area, and sends back the result. The client sends values and prints the response.  
 Concepts Covered: Service and client communication, defining .srv files, request and response handling in ROS 2.  
+Week 4A
+- Added Forward Kinematics (Q1) using q1_fk.py.
+- Implemented Publisher and Subscriber (Q2):
+  - q1_pub.py and q1_sub.py
+  - q2_s1.py and q2_s2.py
+- Built Rover Custom Message (Q3):
+  - RoverData.msg  
+  - Node q3_rover.py publishing rover distance, time, and pose.
+
+Week 4B
+- Q1 (Pen and Paper) – Transformation matrix derivations.
+- Q2 – Rover Simulation using week4_rover package:
+  - Launch file: rover_launch.py
+  - Nodes: rover_control_node.py, test_control_node.py
+- Q3 – Arm simulation in week4_arm package.
+
+How to Run
+cd ~/ros2_ws
+colcon build
+source install/setup.bash
+
+Run FK node
+ros2 run kratos_vahitha q1_fk.py
+
+Run Rover node
+ros2 run kratos_vahitha q3_rover.py
+
+Launch Rover simulation
+ros2 launch week4_rover rover_launch.py
 
 How to Build and Run  
 
